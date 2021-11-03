@@ -22,7 +22,7 @@ function calculateResults(){
     var years = document.getElementById('period').value;
     var months = years * 12;  
     var futureValue = amount * (Math.pow(1 + monthlyRate, months) - 1) / monthlyRate;
-    alert(futureValue)
+    
     if(futureValue>0){
         monthlyPayment.value = amount;
         totalPayment.value = Math.round(futureValue);
